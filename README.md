@@ -48,7 +48,7 @@ data service (e.g.: the HDFS Master, Apache Flume, Hue, etc). Most of our
 charm development is in Python and makes use of the Juju big data library
 mentioned above.
 
-While somewhat helpful as a method to install a service, charms really shine
+While helpful as a method to install a service, charms really shine
 when you relate them to other services. We'll talk more about that when
 we discuss bundles below, but first, here are our current charms:
 
@@ -114,8 +114,8 @@ we discuss bundles below, but first, here are our current charms:
 
    A subordinate charm that facilitates communication with the Hadoop cluster.
    This is designed to be deployed alongside our `apache-hadoop-client` charm
-   as well as our end-user service charms (e.g.: apache-hive, apache-pig, etc).
-   See the [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk/view/head:/DEV-README.md)
+   as well as our end-user service charms (e.g.: `apache-hive`, `apache-pig`,
+   etc). See the [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk/view/head:/DEV-README.md)
    for details about this charm's interfaces.
 
  * **apache-hadoop-yarn-master** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-yarn-master/trunk) |
@@ -183,30 +183,31 @@ that we think the big data community will find useful right away:
 
  * **apache-hadoop-spark** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark)\]
 
-   Extending the core Hadoop bundle to provide the Apache Spark execution engine
+   Extending the core Hadoop bundle to provide the Apache Spark execution
+   engine.
 
    * **apache-hadoop-spark-notebook** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-notebook)\]
 
-     Further extending the Spark bundle with IPython Notebook
+     Further extending the Spark bundle with IPython Notebook.
 
    * **apache-hadoop-spark-zeppelin** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-zeppelin)\]
 
-     Further extending the Spark bundle with Apache Zeppelin
+     Further extending the Spark bundle with Apache Zeppelin.
 
  * **apache-analytics-sql** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-analytics-sql)\]
 
    Extending the core Hadoop bundle to provide analytic capabilities with
-   Apache Hive and MySQL
+   Apache Hive and MySQL.
 
  * **apache-analytics-pig** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-analytics-pig)\]
 
    Extending the core Hadoop bundle to provide analytic capabilities with
-   Apache Pig
+   Apache Pig.
 
  * **apache-ingestion-flume** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-ingestion-flume)\]
 
    Extending the core Hadoop bundle with ingestion capabilities using Apache
-   Flume
+   Flume.
 
 
 ## Media
