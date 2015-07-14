@@ -1,7 +1,6 @@
 TODO:
 - Development workflows
 - beef up code:
-  - Existing solutions
   - Links to current development
 - Roadmap (project plans, blueprints, etc.)
 - How to get involved (features, paper cuts, etc.)
@@ -16,7 +15,7 @@ from hours to days; time you could spend testing, evaluating, and putting your
 big data solutions to good use.
 
 The mission of the Juju big data team is to offer a simple and repeatable
-method for deploying big data solutions. We've created a "pluggable" model
+method for deploying big data environments. We've created a "pluggable" model
 using Juju charms and bundles to let users focus on the fun part (actually
 solving big data problems) without worrying about the intricacies of configuring
 core Hadoop services.
@@ -30,8 +29,43 @@ importantly) how to dig in and get involved!
 
 ## Code
 
-* Juju big data library
-* Charms and bundles
+### Juju big data library
+
+### Charms
+Charms are the core of our development. Each charm models a particular big
+data service (e.g.: the HDFS Master, Apache Flume, Hue, etc). Most of our
+charm development is in Python and makes use of the Juju big data library
+mentioned above. While somewhat helpful as a method to install a service,
+charms really shine when related to others. We'll talk more about that when
+we discuss bundles below, but first, here are the services we've got charmed:
+
+ * apache-flume-hdfs
+ * apache-flume-syslog
+ * apache-flume-twitter
+ * apache-hadoop-client
+ * apache-hadoop-compute-slave
+ * apache-hadoop-hdfs-master
+ * apache-hadoop-hdfs-secondary
+ * apache-hadoop-plugin
+ * apache-hadoop-yarn-master
+ * apache-hive
+ * apache-hue
+ * apache-pig
+ * apache-spark
+ * apache-spark-notebook
+ * apache-zeppelin
+
+### Bundles
+Bundles are groups of charms that model a solution. We've come up with a few
+that we think the big data community will find useful right away:
+
+ * apache-core-batch-processing
+ * apache-hadoop-spark
+   - apache-hadoop-spark-notebook
+   - apache-hadoop-spark-zeppelin
+ * apache-analytics-sql
+ * apache-analytics-pig
+ * apache-ingestion-flume
 
 
 ## Contributors
