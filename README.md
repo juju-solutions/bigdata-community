@@ -1,9 +1,3 @@
-TODO:
-- add charm oneliner descriptions
-- link to design docs
-- Roadmap (project plans, blueprints, etc.)
-- How to get involved (features, paper cuts, etc.)
-
 # Juju Big Data community
 
 When exploring big data solutions, one of the most daunting tasks users face is
@@ -58,72 +52,115 @@ While somewhat helpful as a method to install a service, charms really shine
 when you relate them to other services. We'll talk more about that when
 we discuss bundles below, but first, here are our current charms:
 
- * apache-flume-hdfs \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-hdfs/trunk) |
+ * **apache-flume-hdfs** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-hdfs/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-flume-hdfs)\]
 
- * apache-flume-syslog \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-syslog/trunk) |
+   Designed to talk to other Flume agents, this charm will allow you to ingest
+   data into HDFS in AVRO format.
+
+ * **apache-flume-syslog** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-syslog/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-flume-syslog)\]
 
- * apache-flume-twitter \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-twitter/trunk) |
+   Syslog comes in, AVRO events go out. Connect to `apache-flume-hdfs` to shove
+   those events into HDFS.
+
+ * **apache-flume-twitter** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-flume-twitter/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-flume-twitter)\]
 
- * apache-hadoop-client \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-client/trunk) |
+   Tweets comes in, AVRO events go out. Connect to `apache-flume-hdfs` to shove
+   those tweets into HDFS (requires Twitter API credentials to access the
+   firehose).
+
+ * **apache-hadoop-client** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-client/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-client) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-client/trunk) |
  [stable charm](https://jujucharms.com/apache-hadoop-client)\]
 
- * apache-hadoop-compute-slave \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-compute-slave/trunk) |
+   Provides an endpoint that plugs into the Hadoop cluster using the
+   `apache-hadoop-plugin` subordinate charm. It allows users to manually run
+   MapReduce jobs (e.g.: teragen, terasort, etc).
+
+ * **apache-hadoop-compute-slave** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-compute-slave/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-compute-slave) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-compute-slave/trunk) |
  [stable charm](https://jujucharms.com/apache-hadoop-compute-slave)\]
-   - [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-compute-slave/trunk/view/head:/DEV-README.md)
 
- * apache-hadoop-hdfs-master \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-master/trunk) |
+   Connects to the HDFS and YARN masters to handle dfs and mapreduce tasks.
+   See the [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-compute-slave/trunk/view/head:/DEV-README.md)
+   for details about this charm's interfaces.
+
+ * **apache-hadoop-hdfs-master** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-master/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-hdfs-master) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-hdfs-master/trunk) |
  [stable charm](https://jujucharms.com/apache-hadoop-hdfs-master)\]
-   - [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-master/trunk/view/head:/DEV-README.md)
 
- * apache-hadoop-hdfs-secondary \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-secondary/trunk) |
+   Provides the HDFS Master. See the
+   [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-master/trunk/view/head:/DEV-README.md)
+   for details about this charm's interfaces.
+
+ * **apache-hadoop-hdfs-secondary** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-secondary/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-hdfs-secondary) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-hdfs-secondary/trunk) |
  [stable charm](https://jujucharms.com/apache-hadoop-hdfs-secondary)\]
-   - [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-secondary/trunk/view/head:/DEV-README.md)
 
- * apache-hadoop-plugin \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk) |
+   Provides the Secondary Namenode. See the
+   [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-hdfs-secondary/trunk/view/head:/DEV-README.md)
+   for details about this charm's interfaces.
+
+ * **apache-hadoop-plugin** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-plugin) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-plugin/trunk) |
- [stable charm](https://jujucharms.com/apache-hadoop-plugin)
-   - [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk/view/head:/DEV-README.md)
+ [stable charm](https://jujucharms.com/apache-hadoop-plugin)\]
 
- * apache-hadoop-yarn-master \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-yarn-master/trunk) |
+   A subordinate charm that facilitates communication with the Hadoop cluster.
+   This is designed to be deployed alongside our `apache-hadoop-client` charm
+   as well as our end-user service charms (e.g.: apache-hive, apache-pig, etc).
+   See the [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-plugin/trunk/view/head:/DEV-README.md)
+   for details about this charm's interfaces.
+
+ * **apache-hadoop-yarn-master** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-yarn-master/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hadoop-yarn-master) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hadoop-yarn-master/trunk) |
  [stable charm](https://jujucharms.com/apache-hadoop-yarn-master)\]
-   - [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-yarn-master/trunk/view/head:/DEV-README.md)
 
- * apache-hive \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hive/trunk) |
+   Provides the YARN Master. See the
+   [DEV-README](http://bazaar.launchpad.net/~bigdata-dev/charms/trusty/apache-hadoop-yarn-master/trunk/view/head:/DEV-README.md)
+   for details about this charm's interfaces.
+
+ * **apache-hive** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-hive/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-hive) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-hive/trunk) |
  [stable charm](https://jujucharms.com/apache-hive)\]
 
- * apache-pig \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-pig/trunk) |
+   Provides sql-like analytics with Hive. This is designed to interact with the
+   Hadoop cluster via our `apache-hadoop-plugin` charm.
+
+ * **apache-pig** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-pig/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-pig) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-pig/trunk) |
  [stable charm](https://jujucharms.com/apache-pig)\]
 
- * apache-spark \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-spark/trunk) |
+   Provides analytic capabilities using Pig. This is designed to interact with
+   the Hadoop cluster via our `apache-hadoop-plugin` charm.
+
+ * **apache-spark** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-spark/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-spark) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-spark/trunk) |
  [stable charm](https://jujucharms.com/apache-spark)\]
 
- * apache-spark-notebook \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-spark-notebook/trunk) |
+   Provides the Spark execution engine, designed to back to a Hadoop cluster.
+
+ * **apache-spark-notebook** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-spark-notebook/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-spark-notebook)\]
 
- * apache-zeppelin \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-zeppelin/trunk) |
+   An IPython Notebook service with integrated Spark support.
+
+ * **apache-zeppelin** \[[dev repo](https://code.launchpad.net/~bigdata-dev/charms/trusty/apache-zeppelin/trunk) |
  [dev charm](https://jujucharms.com/u/bigdata-dev/apache-zeppelin) |
  [stable repo](https://code.launchpad.net/~bigdata-charmers/charms/trusty/apache-zeppelin/trunk) |
  [stable charm](https://jujucharms.com/apache-zeppelin)\]
+
+   The Zeppelin notebook service for interacting with a Spark+Hadoop cluster.
 
 ### Bundles
 Bundles are groups of charms that model a solution. We've come up with a few
@@ -191,3 +228,10 @@ helpful if you want to see what we're all about.
 
 You can find us in `#juju` on `irc.freenode.net`, or feel free to email our list
 at <bigdata-dev@lists.launchpad.net>. We look forward to hearing from you!
+
+
+## Next Steps
+
+In the future, we'll be providing our design docs and roadmap in an effort to
+gather input from real-life big data community members. We'll also provide
+resources for contributing to our projects and plans. We hope you'll join us!
