@@ -1,13 +1,10 @@
 TODO:
-- Development workflows
-- beef up code:
-  - Links to current development
+- add charm/bundle oneliner descriptions
+- link to design docs
 - Roadmap (project plans, blueprints, etc.)
 - How to get involved (features, paper cuts, etc.)
 
 # Juju Big Data community
-
-## Intro
 
 When exploring big data solutions, one of the most daunting tasks users face is
 the setup and configuration of these usually complex environments. This can take
@@ -26,6 +23,7 @@ well as extensions to that foundation that make for totally awesome demos.
 
 You'll also find the regular stuff here:  how to contact us and (more
 importantly) how to dig in and get involved!
+
 
 ## Code
 
@@ -145,14 +143,22 @@ that we think the big data community will find useful right away:
  * apache-ingestion-flume \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-ingestion-flume)\]
 
 
+## Media
+
+We have a few presentations, videos, and other bits of media that may be
+helpful if you want to see what we're all about.
+
+ * [Ubuntu Online Summit, 04/2015](http://summit.ubuntu.com/uos-1505/meeting/22428/deploying-big-data-workloads-with-juju/)
+
+
 ## Contributors
 
-* Amir Sanjar (asanjar)
-* Cory Johns (cory_fu)
-* Kevin Monroe (kwmonroe)
+* @[asanjar](https://github.com/asanjar) \[[email](mailto:amir.sanjar@canonical.com)\]
+* @[johnsca](https://github.com/johnsca) \[[email](mailto:cory.johns@canonical.com)\]
+* @[kwmonroe](https://github.com/kwmonroe) \[[email](mailto:kevin.monroe@canonical.com)\]
 
 
 ## Contact
 
-* bigdata-dev@lists.launchpad.net
-* \#juju on freenode
+You can find us in `#juju` on `irc.freenode.net`, or feel free to email our list
+at <bigdata-dev@lists.launchpad.net>. We look forward to hearing from you!
