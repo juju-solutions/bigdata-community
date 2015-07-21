@@ -216,7 +216,10 @@ We have a few presentations, videos, and other bits of media that may be
 helpful if you want to see what we're all about.
 
  * [Ubuntu Online Summit, 04/2015](http://summit.ubuntu.com/uos-1505/meeting/22428/deploying-big-data-workloads-with-juju/)
-
+ * [Hadoop on OpenPower (part 1)](https://www.youtube.com/watch?v=Ou5PvHHr6WM)
+ * [Hadoop on OpenPower (part 2)](https://www.youtube.com/watch?v=jzVVm63JjmY)
+ * [Hadoop+Spark on OpenPower (part 3)](https://www.youtube.com/watch?v=YGi_dtmpgqw)
+ * [Hadoop+Spark on OpenPower (part 4)](https://www.youtube.com/watch?v=Nlxjtb1keCE)
 
 ## Contributors
 
