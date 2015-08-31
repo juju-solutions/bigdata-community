@@ -1,0 +1,14 @@
+{% capture author %}
+    {% if include.post.author %}
+        by
+        {% assign first_char = include.post.author_url|truncate:1,'' %}
+        {% case first_char %}
+            {% when "@" %}<a href="{{include.post.author_url|replace_first:"@","https://github.com/"}}">{{include.post.author}}</a>
+            {% when null %}{{include.post.author}}
+            {% else %}<a href="{{include.post.author_url}}">{{include.post.author}}</a>
+        {% endcase %}
+    {% endif %}
+{% endcapture %}
+<span class="byline">
+    Posted on {{ include.post.date | date_to_string }} {{ author }}
+</span>

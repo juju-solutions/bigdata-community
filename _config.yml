@@ -14,7 +14,7 @@ baseurl: "/bigdata-community"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Big Data w/ Juju
+title: Juju Big Data
 
 # Short description of your site
 description: Topics, musings, and announcements on working with Big Data using Juju
@@ -56,7 +56,7 @@ url-pretty: "bigdata.juju.solutions"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "juju-bigdata"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""

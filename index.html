@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Big Data w/ Juju
+title: Juju Big Data
 subtitle: Creating Big Data solutions with Juju
 ---
 
@@ -14,7 +14,7 @@ subtitle: Creating Big Data solutions with Juju
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">
 	  <h2 class="post-title">{{ post.title }}</h2>
 
 	  {% if post.subtitle %}
@@ -25,7 +25,7 @@ subtitle: Creating Big Data solutions with Juju
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      {% include byline.html post=post %}
     </p>
 
     <div class="post-entry">
@@ -51,21 +51,3 @@ subtitle: Creating Big Data solutions with Juju
   {% endif %}
 </ul>
 {% endif %}
-
-
-<hr>
-
-<div class="blog-comments">
-  <div class="comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = 'juju-bigdata';
-      (function() {
-      	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</div>

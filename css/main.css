@@ -314,6 +314,17 @@ header.header-post .post-heading .post-subheading {
   margin-bottom: 20px;
 }
 
+.post-meta a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.post-meta a:focus,
+.post-meta a:hover {
+  text-decoration: none;
+  color: #0085a1;
+}
+
 @media only screen and (min-width: 768px) {
   header.header-post .post-heading h1 {
     font-size: 50px;
