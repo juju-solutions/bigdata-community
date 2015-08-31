@@ -23,7 +23,7 @@ description: Topics, musings, and announcements on working with Big Data using J
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/big-data-hero-image.png"
 
 # List of links in the navigation bar
 navbar-links:

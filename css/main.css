@@ -134,20 +134,24 @@ img::-moz-selection {
   transition: opacity 0.5s ease-in-out;
   left: 50%;
   width: 50px;
-  margin-top: -25px;
+  margin-top: -15px;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
-  border-radius: 50%;
   margin-left: -50%;
   display: inline-block;
+  /*
+  border-radius: 50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  */
 }
 .navbar-custom .avatar-container  .avatar-img {
   width: 100%;
+  /*
   border-radius: 50%;
+  */
   display: block;
 }
 
@@ -162,14 +166,16 @@ img::-moz-selection {
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
     width: 100px;
-    margin-top: -50px;
+    margin-top: -10px;
   }
   
   .navbar-custom .avatar-container  .avatar-img-border {
     width: 100%;
+    /*
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    */
   }
   
   .navbar-custom .avatar-container  .avatar-img {
