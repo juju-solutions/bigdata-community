@@ -41,11 +41,11 @@ hr.small {
 }
 
 .main-content {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 @media only screen and (min-width: 768px) {
   .main-content {
-    padding-top: 130px;
+    padding-top: 150px;
   }
 }
 
@@ -134,7 +134,7 @@ img::-moz-selection {
   transition: opacity 0.5s ease-in-out;
   left: 50%;
   width: 100px;
-  margin-top: -30px;
+  margin-top: -29px;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
