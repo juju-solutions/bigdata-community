@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting started
-subtitle: How to use Beautiful Jekyll
+subtitle: Creating Big Data solutions with Juju
 ---
 
 # Juju Big Data community
