@@ -8,8 +8,8 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://blog.juju.solutions/bigdata-community"
-baseurl: "/bigdata-community"
+url: "http://bigdata.juju.solutions/"
+baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
