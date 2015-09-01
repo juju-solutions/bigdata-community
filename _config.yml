@@ -37,7 +37,7 @@ navbar-links:
 author:
   name: Big Data team
   email: "bigdata-dev@lists.launchpad.net"
-  github: juju-solutions
+  github: juju-solutions/bigdata-community
 
 # Select which links to show in the footer
 footer-links-active:
