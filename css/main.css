@@ -51,7 +51,11 @@ hr.small {
 
 .main-explain-area {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 15px inherit;
+  padding: 20px 60px;
+}
+
+.main-explain-area p {
+  margin: 0 0 15px 0;
 }
 
 .get-started-wrap {
