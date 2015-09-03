@@ -9,7 +9,7 @@ As Cory alluded to in our [intro post][intro-post], we're excited to talk about
 a bundle that truly demonstrates an end-to-end Big Data solution:
 [Realtime Syslog Analytics][syslog-bundle].
 
-![Realtime syslog analytics bundle](img/realtime-syslog-analytics.svg)
+<img src= 'https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/realtime-syslog-analytics.svg' width=640px>
 
 This bundle models a 9 node cluster designed to scale out. Built around [Apache
 Hadoop][apache-hadoop] components, it contains the following units:
