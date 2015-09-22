@@ -140,7 +140,7 @@ this or any of our other [bundles][bigdata-dev-bundles], reach out to us in
 Thanks for reading!
 
 [intro-post]: http://bigdata.juju.solutions/2015-08-31-new-blog/
-[syslog-bundle]: https://jujucharms.com/u/bigdata-dev/realtime-syslog-analytics/
+[syslog-bundle]: https://jujucharms.com/realtime-syslog-analytics/
 [rsyslog-charm]: https://jujucharms.com/rsyslog-forwarder-ha/
 [juju-getstarted]: https://jujucharms.com/get-started
 [apache-zeppelin]: https://zeppelin.apache.org/
