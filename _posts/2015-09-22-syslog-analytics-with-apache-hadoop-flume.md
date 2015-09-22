@@ -45,7 +45,7 @@ above):
 
 Deploying and relating all of these services is a simple one-liner:
 
-    juju quickstart u/bigdata-dev/realtime-syslog-analytics
+    juju quickstart realtime-syslog-analytics
 
 You can learn more about getting started with Juju and quickstart
 [here][juju-getstarted]. When you're ready, read on to dive a little deeper
