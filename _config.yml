@@ -36,7 +36,7 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Big Data team
-  email: "bigdata-dev@lists.launchpad.net"
+  email: "bigdata@lists.ubuntu.com"
   github: juju-solutions/bigdata-community
 
 # Select which links to show in the footer

@@ -237,7 +237,7 @@ helpful if you want to see what we're all about.
 ## Contact
 
 You can find us in `#juju` on `irc.freenode.net`, or feel free to email our list
-at <bigdata-dev@lists.launchpad.net>. We look forward to hearing from you!
+at <bigdata@lists.ubuntu.com>. We look forward to hearing from you!
 
 
 ## Next Steps
