@@ -19,7 +19,8 @@ First, let's see what the deployed bundle looks like:
 This could easily be extended to work with different logs on different
 services in your cluster. The [rsyslog-forwarder][rsyslog-charm] charm can
 funnel events from any service that generates syslog data into this bundle.
-In this example, we're using the HDFS Master unit as our data source.
+In this example, we're using the HDFS Master unit (our Namenode) as the data
+source.
 
 We won't duplicate too much of the bundle's [README][syslog-bundle] here; you
 can find usage, testing, and scaling information from the previous link.
@@ -64,7 +65,7 @@ is doing:
 <img src= 'https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/realtime-syslog-analytics-status.png' width=720px>
 
 Once all of the charms have settled to a **Ready** state, deployment is
-complete. Use `Ctrl-C` to break out of the `watch` entered above.
+complete. Use `Ctrl-c` to break out of the `watch` entered above.
 
 **Note:** The *PORTS* and *PUBLIC-ADDRESS* columns from the above output
 help identify services that may provide management interfaces. Some
@@ -103,7 +104,7 @@ and visualize results. The processing/visualization flow goes like this:
 
 * Submit a Spark job
 * Spark uses the YARN Master to send work to (and retrieve results from) Compute Slaves
-* The Spark web interface lets you view job status and results
+* The Zeppelin web interface lets you view job status and results
 
 The "Submit a Spark job" bullet is certainly vague. You *could* SSH to the
 Spark unit and manually submit a job. For example, estimate &pi; with the
@@ -133,7 +134,7 @@ This is ingestion, processing, and visualization in style:
 ### Conclusion
 I hope this has piqued your interest in some of the cool solutions we're
 offering in the Big Data corner of the Juju ecosystem. We're always interested
-in the Big Data problems you're facing, so if you have question/comments about
+in the Big Data problems you're facing, so if you have questions/comments about
 this or any of our other [bundles][bigdata-dev-bundles], reach out to us in
 `#juju` on `irc.freenode.net`.
 
