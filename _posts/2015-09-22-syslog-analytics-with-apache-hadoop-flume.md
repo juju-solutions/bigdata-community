@@ -38,7 +38,7 @@ above):
 * HDFS Secondary NameNode (1 unit)
 * YARN Master (1 unit)
 * Compute Slaves (scaled to 3 units)
-* Spark (1 unit)
+* Spark (1 unit in *yarn-client* mode)
 * Zeppelin (colocated on the Spark unit)
 * Flume-HDFS (1 unit)
 * Flume-Syslog (1 unit)
