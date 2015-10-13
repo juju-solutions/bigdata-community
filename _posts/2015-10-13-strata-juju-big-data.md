@@ -4,6 +4,7 @@ title: Juju Big Data at Strata+Hadoop World
 author: Andrew McLeod
 author_url: "@andrewdmcleod"
 ---
+<img src= 'https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/2015-strata-logo.png' width=720px>
 
 Earlier this month, myself and Kevin &mdash; another member of the Juju big
 data team &mdash; attended the 2015 Strata+Hadoop World conference in New York
