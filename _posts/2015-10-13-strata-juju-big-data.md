@@ -24,7 +24,7 @@ their innovative ideas and test them almost immediately on real data without
 having to wade through paperwork and wait for approvals. I couldn’t help but
 think how useful Juju would be in this environment &mdash; not necessarily
 replacing something like Ambari or Cloudera Manager, but supplementing it to
-allow data scientists and other end uses to create test/production clusters
+allow data scientists and other end users to create test/production clusters
 without taking time from an operations team.
 
 All of the Netflix talks were absolutely packed, showing that big names draw
