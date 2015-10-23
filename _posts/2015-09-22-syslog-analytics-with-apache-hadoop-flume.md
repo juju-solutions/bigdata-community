@@ -90,7 +90,7 @@ our environment as follows:
 At this point, you *could* SSH to the Flume-HDFS unit and `hdfs dfs -cat` an
 event:
 
-    juju ssh flume-syslog/0
+    juju ssh flume-hdfs/0
     hdfs dfs -cat /user/flume/flume-syslog/<yyyy-mm-dd>/FlumeData.<id>
 
 But that's not very useful if you want to derive meaning from your data (e.g.,
