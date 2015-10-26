@@ -11,18 +11,16 @@ the setup and configuration of these usually complex environments. This can take
 from hours to days; time you could spend testing, evaluating, and putting your
 big data solutions to good use.
 
-The mission of the Juju big data team is to offer a simple and repeatable
+The mission of the Juju Big Data team is to offer a simple and repeatable
 method for deploying big data environments. We've created a "pluggable" model
 using Juju charms and bundles to let users focus on the fun part (actually
 solving big data problems) without worrying about the intricacies of configuring
 core Hadoop services.
 
-This repo serves as our hub for talking about the work we're doing. We'll show
-off solutions that provide a solid foundation for interfacing with Hadoop, as
-well as extensions to that foundation that make for totally awesome demos.
-
-You'll also find the regular stuff here:  how to contact us and (more
-importantly) how to dig in and get involved!
+This post provides an overview of the foundation we've built for interfacing
+with Hadoop, as well as extensions to that foundation that make for totally
+awesome demos. You'll also find a few videos related to our work and of course,
+how to contact us!
 
 
 ## Code
@@ -227,21 +225,15 @@ helpful if you want to see what we're all about.
  * [Hadoop+Spark on OpenPower (part 3)](https://www.youtube.com/watch?v=YGi_dtmpgqw)
  * [Hadoop+Spark on OpenPower (part 4)](https://www.youtube.com/watch?v=Nlxjtb1keCE)
 
-## Contributors
-
-* @[asanjar](https://github.com/asanjar) \[[email](mailto:amir.sanjar@canonical.com)\]
-* @[johnsca](https://github.com/johnsca) \[[email](mailto:cory.johns@canonical.com)\]
-* @[kwmonroe](https://github.com/kwmonroe) \[[email](mailto:kevin.monroe@canonical.com)\]
-
 
 ## Contact
 
-You can find us in `#juju` on `irc.freenode.net`, or feel free to email our list
-at <bigdata@lists.ubuntu.com>. We look forward to hearing from you!
+You can find us in `#juju` on `irc.freenode.net`, or feel free to email our
+list at <bigdata@lists.ubuntu.com>. We look forward to hearing from you!
 
 
 ## Next Steps
 
 In the future, we'll be providing our design docs and roadmap in an effort to
-gather input from real-life big data community members. We'll also provide
-resources for contributing to our projects and plans. We hope you'll join us!
+gather input from big data community members. We'll also provide resources for
+contributing to our projects and plans. We hope you'll join us!
