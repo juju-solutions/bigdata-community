@@ -230,10 +230,3 @@ helpful if you want to see what we're all about.
 
 You can find us in `#juju` on `irc.freenode.net`, or feel free to email our
 list at <bigdata@lists.ubuntu.com>. We look forward to hearing from you!
-
-
-## Next Steps
-
-In the future, we'll be providing our design docs and roadmap in an effort to
-gather input from big data community members. We'll also provide resources for
-contributing to our projects and plans. We hope you'll join us!
