@@ -29,3 +29,10 @@ community members in `#juju` on `irc.freenode.net` or mail the list at
 
 [Getting Started]: http://bigdata.juju.solutions/getstarted
 [bigdata.juju.solutions]: http://bigdata.juju.solutions
+
+
+# Next Steps
+
+In the future, we'll be providing our design docs and roadmap in an effort to
+gather input from big data community members. We'll also provide resources for
+contributing to our projects and plans. We hope you'll join us!
