@@ -4,7 +4,7 @@ title: Now You're Charming with Layers
 author: Cory Johns
 author_url: "@johnsca"
 ---
-<img src= '' width=720px>
+<img src="/img/layers.png" />
 
 Charming with layers is a relatively new approach to writing charms that we,
 as the Juju community, are begining to use.  The idea is to allow better
