@@ -46,10 +46,11 @@ that are common to many different charms, and allow charms to reuse that
 commonality without having to reimplement it each time.  Base layers typically
 are not sufficient on their own to be considered a charm; they likely can't be
 built into a deployable charm, and if they can, they're unlikely to do anything
-useful.  However, it is possible for a fully working charm to be written to also
-be used as a base for other charms, if that use-case makes sense for the charm,
-and it should be noted that it is common for a runtime layer to build on another
-base or runtime layer.
+useful.  However, other than how they're used, there's nothing inherent that
+distinguishes base layers from charm layers.  It is possible for a fully working
+charm to be written to also be used as a base for other charms, if that use-case
+makes sense for the charm.  It should also be noted that it is common for a base
+layer to build on another base layer, especially [layer-basic][].
 
 The most basic example is just that, [layer-basic][].  It provides nothing more
 than the minimum needed to effectively use layered charms: [charms.reactive][],
