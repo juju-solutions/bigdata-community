@@ -24,6 +24,9 @@ thought that it would be a good time to write up a short explanation about what
 the different types of charm layers are, what I think belongs in them, and how
 they can be used to make writing charms a much more pleasant experience.
 
+
+## Types of Layers
+
 There are three major categories of charm layers:
 
   * Base, or runtime layers
