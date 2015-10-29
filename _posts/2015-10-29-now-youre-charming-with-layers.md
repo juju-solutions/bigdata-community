@@ -76,7 +76,7 @@ requires) of the relation and turns the two-way key-value store that are Juju
 relations under-the-hood into a full-fledged API for interacting with charms
 supporting that interface.
 
-It is important to note that interface layers **do not** actually implement
+It is important to note that interface layers **do not** actually **implement**
 either side of the relation.  Instead, they are solely responsible for
 the **communication** that goes on over the relation, relying on charms on
 either end to decide what to do with the results of that communication.
