@@ -44,7 +44,9 @@ commonality without having to reimplement it each time.  Base layers typically
 are not sufficient on their own to be considered a charm; they likely can't be
 built into a deployable charm, and if they can, they're unlikely to do anything
 useful.  However, it is possible for a fully working charm to be written to also
-be used as a base for other charms, if that use-case makes sense for the charm.
+be used as a base for other charms, if that use-case makes sense for the charm,
+and it should be noted that it is common for a runtime layer to build on another
+base or runtime layer.
 
 The most basic example is just that, [layer-basic][].  It provides nothing more
 than the minimum needed to effectively use layered charms: [charms.reactive][],
@@ -54,9 +56,9 @@ of runtime layer.  For example, [layer-apache-php][] provides Apache2 and
 mod-php, as well as mechanisms for fetching and installing a PHP project within
 that runtime.
 
-Base layers can be written in any language, but because the reactive framework
-that glues layers together is currently written in Python, they will need to
-at least include that.
+Base layers can be written in any language, but must at a minimum provide the
+reactive framework that glues layers together, which is written in Python.
+This can be done trivially by building the base layer off of [layer-basic][].
 
 
 ## Interface Layers
@@ -100,7 +102,8 @@ Java, as well as an API for the Java charms to receive those configuration
 options and methods for them to send back relevant information.
 
 Interface layers currently must be written in Python and extend the [ReactiveBase][]
-class.
+class, though they can then be used by any language using the built-in CLI
+API.
 
 
 ## Charm Layers
