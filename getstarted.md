@@ -188,36 +188,36 @@ that we think the big data community will find useful right away:
 
  * **apache-analytics-sql** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-analytics-sql)\]
 
- Extending the core Hadoop bundle to provide analytic capabilities with
- Apache Hive and MySQL.
+   Extending the core Hadoop bundle to provide analytic capabilities with
+   Apache Hive and MySQL.
 
  * **apache-analytics-pig** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-analytics-pig)\]
 
- Extending the core Hadoop bundle to provide analytic capabilities with
- Apache Pig.
+   Extending the core Hadoop bundle to provide analytic capabilities with
+   Apache Pig.
 
  * **apache-ingestion-flume** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-ingestion-flume)\]
 
- Extending the core Hadoop bundle with ingestion capabilities using Apache
- Flume.
+   Extending the core Hadoop bundle with ingestion capabilities using Apache
+   Flume.
 
  * **apache-hadoop-spark** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark)\]
 
- Extending the core Hadoop bundle to provide the Apache Spark execution
- engine.
+   Extending the core Hadoop bundle to provide the Apache Spark execution
+   engine.
 
-  * **apache-hadoop-spark-notebook** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-notebook)\]
+   * **apache-hadoop-spark-notebook** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-notebook)\]
 
-    Further extending the Spark bundle with IPython Notebook.
+     Further extending the Spark bundle with IPython Notebook.
 
-  * **apache-hadoop-spark-zeppelin** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-zeppelin)\]
+   * **apache-hadoop-spark-zeppelin** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/apache-hadoop-spark-zeppelin)\]
 
-    Further extending the Spark bundle with Apache Zeppelin.
+     Further extending the Spark bundle with Apache Zeppelin.
 
  * **realtime-syslog-analytics** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/realtime-syslog-analytics)\]
 
-  Combining ingestion (Flume), processing (Spark), and visualization (Zeppelin)
-  into a log analytics solution.
+   Combining ingestion (Flume), processing (Spark), and visualization (Zeppelin)
+   into a log analytics solution.
 
 
 ## Media
