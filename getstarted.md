@@ -214,7 +214,7 @@ that we think the big data community will find useful right away:
 
      Further extending the Spark bundle with Apache Zeppelin.
 
- * **realtime-syslog-analytics** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/realtime-syslog-analytics)\]
+   * **realtime-syslog-analytics** \[[dev bundle](https://jujucharms.com/u/bigdata-dev/realtime-syslog-analytics)\]
 
    Combining ingestion (Flume), processing (Spark), and visualization (Zeppelin)
    into a log analytics solution.
