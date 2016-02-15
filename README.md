@@ -19,6 +19,7 @@ to reach out to any of us with questions or comments:
 * @[andrewdmcleod](https://github.com/andrewdmcleod) \[[email](mailto:andrew.mcleod@canonical.com)\]
 * @[johnsca](https://github.com/johnsca) \[[email](mailto:cory.johns@canonical.com)\]
 * @[kwmonroe](https://github.com/kwmonroe) \[[email](mailto:kevin.monroe@canonical.com)\]
+* @[ktsakalozos](https://github.com/ktsakalozos) \[[email](mailto:kos.tsakalozos@canonical.com)\]
 
 
 # Contact
