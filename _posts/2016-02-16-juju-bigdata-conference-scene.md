@@ -76,7 +76,7 @@ had any plans to couple with popular, fast moving projects, such as
 Luckily, Alexander Bezzubov, sitting next to him, raised his hand and replied:
 "I'm the release manager for Zeppelin, and yes, we're working on it."
 
-<img src="/img/2016-ghent-cory-kevin-mark.jpg" width="720px" />
+<img src="https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/2016-ghent-cory-kevin-mark.jpg" alt="Juju Big Data in Ghent" width="720px" />
 
 Our live demo was &mdash; we thought &mdash; pretty cool, this time validated
 by feedback from the audience. When the presentation began we asked people to
@@ -89,12 +89,15 @@ The result of all of this calculation would be displayed graphically
 room full of computer-type-people who knew how to write for-loops and after a
 few minutes we noticed we had more than a few login attempts:
 
-<img src="/img/2016-ghent-demo-count.png" width="720px" />
+<img src="https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/2016-ghent-demo-count.png" alt="Juju Big Data word count demo" width="720px" />
 
 By the end of the session we had somewhere around 30,000 login attempts, and a
 screenshot from Zeppelin looked something like this:
 
-<img src="/img/2016-ghent-demo-names.png" width="720px" />
+<img src="https://cdn.rawgit.com/juju-solutions/bigdata-community/gh-pages/img/2016-ghent-demo-names.png" alt="Juju Big Data username demo" width="720px" />
 
 While the weather in Ghent wasn't warm or sunny, the faces of our attendees
-were, and we were ecstatic to share the experience with them.
+were, and we were ecstatic to share the experience with them. We're always
+interested in meeting more community members. If you have questions/comments
+about these engagements or any of our work, reach out to us in `#juju` on
+`irc.freenode.net`.
