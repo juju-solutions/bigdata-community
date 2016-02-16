@@ -83,3 +83,6 @@ exclude:
   - CNAME
   - LICENSE
   - README.md
+
+gems:
+  - jekyll-paginate
