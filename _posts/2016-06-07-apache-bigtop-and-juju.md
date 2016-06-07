@@ -9,6 +9,8 @@ Juju users have been enjoying our collection of Big Data charms for over two
 years. During this time, we’ve learned a lot about what our users want from this
 complex corner of big software.
 
+<img style="float: right" src="https://insights.ubuntu.com/wp-content/uploads/15a2/pb-bigtop-300px.png" />
+
 The [Apache Bigtop](http://bigtop.apache.org/) community distills best practices
 for installing big data software. They extensively test and package Apache big
 data projects to ensure users are able to manage their deployments.  This
