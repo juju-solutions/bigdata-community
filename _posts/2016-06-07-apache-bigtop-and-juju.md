@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Apache Bigtop and Juju: A Charming Approach to Big Data"
+author: Cory Johns
 author_url: "@johnsca"
 ---
 
