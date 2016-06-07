@@ -189,7 +189,7 @@ img::-moz-selection {
 
 /* --- Footer --- */
 
-footer {
+footer.page-footer {
   padding: 30px 0;
   background: #F5F5F5;
   border-top: 1px #EAEAEA solid;
@@ -216,7 +216,7 @@ footer .theme-by {
 }
 
 @media only screen and (min-width: 768px) {
-  footer {
+  footer.page-footer {
     padding: 50px 0;
   }
   footer .footer-links {
@@ -399,4 +399,11 @@ header.header-post .post-heading .post-subheading {
   .pager.blog-pager  {
     margin-top: 10px;
   }
+}
+
+.callout {
+    margin-left: 1em;
+    margin-right: -100px;
+    float: right;
+    width: 63%;
 }
