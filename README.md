@@ -20,6 +20,7 @@ to reach out to any of us with questions or comments:
 * @[johnsca](https://github.com/johnsca) \[[email](mailto:cory.johns@canonical.com)\]
 * @[kwmonroe](https://github.com/kwmonroe) \[[email](mailto:kevin.monroe@canonical.com)\]
 * @[ktsakalozos](https://github.com/ktsakalozos) \[[email](mailto:kos.tsakalozos@canonical.com)\]
+* @[petevg](https://github.com/petevg) \[[email](mailto:pete.vandergiessen@canonical.com)\]
 
 
 # Contact
