@@ -65,7 +65,7 @@ is a specific workload that you would like to share with others, please mail the
 [Bigtop Dev List](http://bigtop.apache.org/mail-lists.html). To see current
 ideas, take a look at our [Apache Bigtop Charming Effort community
 wiki](https://github.com/juju-solutions/bigdata-community/wiki/Apache-Bigtop)
-and/or chime in on the in-progress [JIRA bugs](https://goo.gl/Hhda2M).
+and/or chime in on the in-progress [JIRA bugs][].
 
 If you already have Juju 2 installed, give the latest Bigtop Hadoop bundle a try
 with:
@@ -88,3 +88,6 @@ anyone to attend.
 
 The Bigtop community is vibrant, collaborative, and friendly &mdash; a community we
 are excited to be a part of to help make Apache big data software better!
+
+
+[JIRA bugs]: https://issues.apache.org/jira/issues/?jql=project%20%3D%20BIGTOP%20AND%20reporter%20in%20(ktsakalozos%2C%20arosales%2C%20kwmonroe%2C%20AndrewMcLeod%2C%20petevg%2C%20johnsca)
