@@ -47,21 +47,25 @@ juju relate zeppelin spark
 ```
 juju expose zeppelin
 ```
-1. We're going to add a fairly large notebook to Zeppelin, so you'll want to adjust a setting.
-```
-juju set-config zeppelin max_message_size=4116000
-```
 1. Wait for things to finish getting setup. This might be a good time to make yourself a sandwich, or spend some time making that perfect cup of espresso.
 ```
-watch juju status
+watch --color 'juju status --color'
 ```
-1. Once your cluster is all green, take note of zeppelin's ip, and visit port 9090 in your browser. You can get the ip by running `juju status zeppelin`.
+1. Once your cluster is all green, take note of zeppelin's ip. You can get the ip by running juju status.
+```
+juju status zeppelin
+```
+1. Fetch [this rather cool Earthquake visualization notebook by Leemoon Soo from the Hortonworks gallery](https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2APFTN3NY/note.json), and submit it to the zeppelin api.
+```
+wget https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2APFTN3NY/note.json
+curl -H "content-type: application/json" -X POST --data @note.json http://<zeppelin ip>:9090/api/notebook
+```
+1. You can now open up Zeppelin's web interface in a browser and execute the notebook (click the "play" button near the top of the page).
 ```
 sensible-browser https://<zeppelin ip>:9090
 ```
-1. Use the zeppelin web interface to import [this rather cool notebook from the hortonworks gallery](https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2APFTN3NY/note.json)
 
-After the notebook loads, you can execute it via the web interface; you should wind up with some nicely visualized data that you can play with.
+*Note: you can technically use the web interface to submit the notebook, but you'd need to strip out the cached data first, as the raw notebook is too big to submit successfully over the web api.*
 
 Congratulations! You now have a working Zeppelin interface on top of a hadoop processing core. You can take your pick of additional Zeppelin notebooks, and import them into your setup for further exploration, or read on to learn what else you can do with the Big Data charms and bundles.
 
