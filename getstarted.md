@@ -22,6 +22,70 @@ with Hadoop, as well as extensions to that foundation that make for totally
 awesome demos. You'll also find a few videos related to our work and of course,
 how to contact us!
 
+First, though, let's just take a look at how straightforward it is to get started with very complex software. You can do it during a lunch break:
+
+## A Lunch Break Project -- Visualize Earthquake Data with Zeppelin
+
+*This tutorial assumes that you have Juju 2.0 installed and bootstrapped. If you don't, try installing [the devel version of charmbox](https://github.com/juju-solutions/charmbox/tree/devel), setup a free cloud account via our [developer program](https://developer.juju.solutions), and follow the [Juju getting started guide](https://jujucharms.com/docs/devel/getting-started).*
+
+1. Deploy the hadoop processing bundle.
+```
+juju deploy hadoop-processing
+```
+1. Add the spark and apache-zeppelin charms. We'll deploy the latter as "zeppelin", to save us some typing later on.
+```
+juju deploy apache-zeppelin zeppelin
+juju deploy spark
+```
+1. Add some relations to connect everything together ("plugin" is our hadoop plugin charm, which makes it straightforward to connect applications to the core hadoop application).
+```
+juju relate openjdk spark
+juju relate spark plugin
+juju relate zeppelin spark
+```
+1. Expose the zeppelin port, so that you can talk to the web interface when it finishes setting itself up.
+```
+juju expose zeppelin
+```
+1. Wait for things to finish getting setup. This might be a good time to make yourself a sandwich, or spend some time making that perfect cup of espresso.
+```
+watch --color 'juju status --color'
+```
+1. Once your cluster is all green, take note of zeppelin's ip. You can get the ip by running juju status.
+```
+juju status zeppelin
+```
+1. Fetch [this rather cool Earthquake visualization notebook by Leemoon Soo from the Hortonworks gallery](https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2APFTN3NY/note.json), and submit it to the zeppelin api.
+```
+wget https://raw.githubusercontent.com/hortonworks-gallery/zeppelin-notebooks/master/2APFTN3NY/note.json
+curl -H "content-type: application/json" -X POST --data @note.json http://<zeppelin ip>:9090/api/notebook
+```
+1. You can now open up Zeppelin's web interface in a browser and execute the notebook (click the "play" button near the top of the page).
+```
+sensible-browser https://<zeppelin ip>:9090
+```
+
+*Note: you can technically use the web interface to submit the notebook, but you'd need to strip out the cached data first, as the raw notebook is too big to submit successfully over the web api.*
+
+Congratulations! You now have a working Zeppelin interface on top of a hadoop processing core. You can take your pick of additional Zeppelin notebooks, and import them into your setup for further exploration, or read on to learn what else you can do with the Big Data charms and bundles.
+
+### Note: you may bump into some limits with your cloud provider!
+
+This is a Big Data bundle, which means that you are going to be deploying a lot of services, on a lot of virtual machines, even for a small experiment like the one in the example above. Some cloud provider accounts come with restrictions on the number of cores that you can deploy to your cloud at any one time, which may prevent you from provisioning all of your Juju machines (you'll see machines hung in an "error" state when you run `juju status`). You can either file a ticket with your provider to get this limit increased, or you can adjust the hadoop bundle to reduce the number of slave nodes, so that you don't run into the limit.
+
+To edit the bundle, replace step 1 above with the following steps:
+
+1. Fetch the bundle's source code, and open the bundle.yaml in a text editor. Don't worry, the file is straightforward.
+```
+charm pull hadoop-processing
+nano hadoop-processing/bundle.yaml
+```
+1. Reduce the number of units for the slave from 3 to 1: find "num_units" under "slave". Replace the "3" with a "1", save the .yaml file, and exit your text editor.
+1. Deploy the newly edited bundle.
+```
+juju deploy ./hadoop-processing/bundle.yaml
+```
+1. Continue with step 2 in the instructions above.
 
 ## Code
 
